@@ -1,0 +1,67 @@
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #00ff99;
+    margin-bottom: 20px;
+}
+
+#videoContainer img {
+    border: 4px solid #00ff99;
+    border-radius: 10px;
+    max-width: 90vw;
+    box-shadow: 0 0 15px #00ff99;
+    margin-bottom: 10px;
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+button {
+    background-color: #00ff99;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #121212;
+}
+
+button:hover {
+    background-color: #00cc88;
+}
+
+#detectionTag {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #00ff99;
+}
+/* Voice alert box style */
+#alertBox {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    box-shadow: 0 0 15px 5px red;
+    animation: pulse-red 1s infinite;
+}
+
+/* Pulse animation for alert */
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 10px 5px red; }
+    50% { box-shadow: 0 0 20px 10px red; }
+    100% { box-shadow: 0 0 10px 5px red; }
+}
