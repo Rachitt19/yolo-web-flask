@@ -86,10 +86,7 @@ def upload():
         color = confidence_color(conf)
         cv2.rectangle(image_np, (x1, y1), (x2, y2), color, 2)
         cv2.putText(image_np, label, (x1, y1 - 10),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
-
-    result_image = Image.fromarray(image_np)
-    img_io = io.BytesIO()
+                    cv2.F
     result_image.save(img_io, 'JPEG')
     img_io.seek(0)
     return send_file(img_io, mimetype='image/jpeg')
@@ -98,7 +95,10 @@ def upload():
 @app.route('/detected_classes')
 def detected_classes():
     global last_detected_classes
-    return jsonify(last_detected_classes)
+    return jsonify(lONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+
+    result_image = Image.fromarray(image_np)
+    img_io = io.BytesIO()ast_detected_classes)
 
 if __name__ == '__main__':
     app.run(debug=True)
