@@ -33,7 +33,6 @@ jsonschema==4.24.0
 jsonschema-specifications==2025.4.1
 keras==3.10.0
 kiwisolver==1.4.8
-labelImg==1.8.6
 libclang==18.1.1
 lxml==5.4.0
 Markdown==3.8
@@ -59,7 +58,6 @@ protobuf==5.29.5
 psutil==7.0.0
 py-cpuinfo==9.0.0
 pyarrow==20.0.0
-pydeck==0.9.1
 Pygments==2.19.1
 pyogrio==0.11.0
 pyparsing==3.2.3
@@ -80,12 +78,11 @@ scipy==1.15.3
 shapely==2.1.1
 six==1.17.0
 smmap==5.0.2
-streamlit==1.45.1
 sympy==1.14.0
 tenacity==9.1.2
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
-tensorflow==2.19.0
+tensorflow>=2.13.0
 tensorflow-io-gcs-filesystem==0.37.1
 termcolor==3.1.0
 threadpoolctl==3.6.0
