@@ -1,0 +1,6 @@
+# space.yaml
+
+title: YOLOv8 Flask Detection App
+sdk: docker
+python_version: 3.10
+app_port: 7860
